@@ -2,9 +2,10 @@
 <html>
   <head>
     <meta name="title" content="시">
-    <meta name="viewport" content="user-scalable=no, initial-scal=1">
+    <meta name="viewport" content="user-scalable=no, initial-scal=1, maximum-scale=1">
     <style>
       html, body {
+        font-family:"NanumMyeongjo", "Batang", "Malgun Gothic", serif;
         height: 100%;
         margin: 0;
         padding: 0;
@@ -12,12 +13,15 @@
       body {
         display: flex;
         justify-content: center;
+        overflow: hidden;
       }
       .block {
         border-radius: 20px;
-        background-color: rgb(113, 187, 197);
-        width: 70vh; height: 60vh;
-        margin: auto auto;
+  background: linear-gradient(135deg, #f7fbfc 0%, #d9edf2 40%, #add9e4 100%);
+  width: 80%;
+  aspect-ratio: 7 / 6;  /* 70:60 비율 유지 */
+  max-width: 1000px;
+  margin: auto;
       }
 
       .poet_title {
@@ -39,7 +43,7 @@
     <div class="block">
       <div class="poet">
         <h1 class="poet_title">교목</h1>
-        <h4 class="right"> 이육사</h4>
+        <h4 class="right"> 이육사 &nbsp;&nbsp;</h4>
         <p>
           푸른 하늘에 닿을 듯이<br>
           세월에 불타고 우뚝 남아서서<br>
@@ -51,10 +55,12 @@
 <br>
           검은 그림자 쓸쓸하면<br>
           마침내 호수 속 깊이 거꾸러져<br>
-          차마 바람도 흔들진 못해라<br><br>
+          차마 바람도 흔들진 못해라<br>
         </p>
       </div>
       
     </div>
   </body>
 </html>
+
+
